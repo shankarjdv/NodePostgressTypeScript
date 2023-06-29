@@ -1,0 +1,41 @@
+{
+  "scripts": {
+    "build": "npx tsc",
+    "start": "npx tsc && node --experimental-specifier-resolution=node dist/server.js",
+    "dev": "nodemon --exec ts-node src/server.ts",
+    "create-seed": "sequelize-cli seed:generate --name create-roles",
+    "sequelize:seed:generate": "npx sequelize-cli seed:generate --name create-roles --seeders-path src/seeders --migrations-path src/migrations --migrations-ext ts --seeders-ext ts",
+    "migrate": "migrate"
+  },
+  "type": "module",
+  "dependencies": {
+    "@azure/cosmos": "^3.17.3",
+    "@azure/identity": "^3.2.2",
+    "@databricks/sql": "^1.2.1",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.2",
+    "@types/mongodb": "^4.0.7",
+    "azure-identity": "^0.0.1-security",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-jwt": "^8.4.1",
+    "joi": "^17.9.2",
+    "jsonwebtoken": "^9.0.0",
+    "jwks-rsa": "^3.0.1",
+    "mongodb": "^5.5.0",
+    "node-pg-migrate": "^6.2.2",
+    "nodemon": "^2.0.22",
+    "pg": "^8.11.0",
+    "pg-hstore": "^2.3.4",
+    "pg-migrate": "^2.0.1",
+    "sequelize": "^6.32.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.10.2",
+    "sequelize-cli": "^6.6.1",
+    "sequelize-typescript": "^2.1.5"
+  }
+}

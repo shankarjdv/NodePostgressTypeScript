@@ -1,0 +1,37 @@
+{
+    "development": {
+      "username": "postgres",
+      "password": "root123",
+      "database": "testDb",
+      "host": "localhost",
+      "port": 5432,
+      "dialect": "postgres",
+      "dialectOptions": {
+        "ssl": false,
+        "bin": "C:\\Program Files\\PostgreSQL\\15\\bin"
+      }
+    },
+    "production": {
+      "username": "production-username",
+      "password": "production-password",
+      "database": "production-db",
+      "host": "production-host",
+      "port": 5432,
+      "dialect": "postgres",
+      "dialectOptions": {
+        "ssl": true
+      }
+    },
+    "test": {
+      "username": "test-username",
+      "password": "test-password",
+      "database": "test-db",
+      "host": "test-host",
+      "port": 5432,
+      "dialect": "postgres",
+      "dialectOptions": {
+        "ssl": false
+      }
+    }
+  }
+  
